@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+ul {
+    margin-top: 12px;
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding-left: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+#myAlert{
+    /* padding: 1px 0; */
+    line-height: 26px;
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    margin: 15px auto;
+    border-radius: 4px;
+    display: none;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h5 {
+    text-align: center;
+}
+
+.containerClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+    height: 65vh;
+    border: 2px dotted blueviolet;
+}
+
+input[type="text"] {
+    width: 20vw;
+    margin-top: 5vh;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    text-align: center;
+    height: 25px;
+}
+input[type="text"]:focus {
+    outline: none;
+    border: 3px solid blueviolet;
+}
+select {
+    width: 20vw;
+    margin-top: 5vh;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    text-align: center;
+    height: 34px;
+}
+
+
+select:focus {
+    outline: none;
+    border: 3px solid blueviolet;
+}
+.btn{
+width: 10vw;
+    margin-top: 5vh;
+    border: 2px solid blueviolet;
+    border-radius: 15px;
+    text-align: center;
+    height: 25px;
+}
+.btn:focus {
+    outline: none;
+    border: 3px solid blueviolet;
+}
+h3{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97vw;
+    border: 2px dotted blueviolet;
+    padding: 10px;
+    word-wrap: normal;
+    justify-content: space-evenly;
+}
+.item{
+    width: 250px;
+    height: 120px;
+    border: 2px solid blueviolet;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+@media only screen and (max-width: 600px) {
+    li {
+        display: block;
+        padding-top: 8px;
+    }
+}
+@media only screen and (max-width:700px) and (min-width:400px){
+    input[type="text"],select{
+
+        width: 40vw;
+    }
+    .btn{
+        width: 30vw;
+    }
+}
+@media only screen and (max-width:399px){
+    input[type="text"],select{
+
+        width: 60vw;
+    }
+    .btn{
+        width: 40vw;
+    }
+}
+

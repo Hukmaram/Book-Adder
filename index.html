@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Book Library</a></li>
+                <li><a href="#">Subject Wise</a></li>
+                <li><a href="#">List of Books</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="myAlert"></div>
+        <h5>Add a Book to Library</h5>
+        <form id="bookForm">
+            <div class="containerClass">
+                <input type="text" id="book" name="book" placeholder="Book Name">
+                <input type="text" id="author" name="author" placeholder="Author Name">
+                <select id="type" name="type" placeholder="Book Type">
+                    <option value="">Choose book type</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="submit" class="btn"value="Add Book">
+            </div>
+        </form>
+        <h3>Your Book List</h3>
+        <div class="container" id="bookDiv">
+        </div>
+    </section>
+    <!-- <script src="/project2.js"></script> -->
+    <script src="/app.js"></script>
+</body>
+
+</html>
